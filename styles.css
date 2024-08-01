@@ -1,0 +1,83 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ff7f00;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile img:hover {
+    transform: scale(1.1);
+}
+
+.profile h1 {
+    font-size: 26px;
+    margin: 15px 0 5px 0;
+}
+
+.profile p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff7f00;
+    color: #ffffff;
+    padding: 12px;
+    margin: 10px 0;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.links .link i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.links .link:hover {
+    background: #e67300;
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
